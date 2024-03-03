@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="font-sans">
 
 <head>
     <title>SinoMex Importaciones</title>
@@ -14,23 +14,17 @@
 
 <body class="bg-gray-100" id="myPage">
     <!-- Navbar starts -->
-    <nav class="bg-gray-800">
+    <nav class="bg-primary sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div class="relative flex items-center justify-between h-16">
                 <!-- Mobile menu button-->
                 <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                     <button
                       type="button"
-                      class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                      class="inline-flex items-center justify-center p-2 rounded-md text-secondary hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                       id="mobile-menu-button"
                     >
                         <span class="sr-only">Open main menu</span>
-                        <!-- Icon when menu is closed. -->
-                        <!--
-                  Heroicon name: outline/menu
-
-                  Menu open: "hidden", Menu closed: "block"
-                -->
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
@@ -38,16 +32,13 @@
                     <!-- Logos (hidden on small screens) -->
                     <div class="hidden sm:block sm:ml-6">
                         <div class="flex space-x-4">
-                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                            <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Inicio</a>
+                            <a href="#" class=" px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Inicio</a>
 
-                            <a href="#team" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Equipo</a>
+                            <a href="#work" class="hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Trabajo</a>
+                            
+                            <a href="#reviews" class="hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Reseñas</a>
 
-                            <a href="#work" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Trabajo</a>
-
-                            <a href="#pricing" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Precio</a>
-
-                            <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
+                            <a href="#contact" class="hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
                         </div>
                     </div>
                 </div>
@@ -55,18 +46,43 @@
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="sm:hidden" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Inicio</a>
+        <div class="hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 text-secondary-dark">
+                <a href="#" class="flex items-center block px-3 py-2 rounded-md text-base font-medium" aria-current="page">
+                    <div class="mr-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>    
+                    </div>
+                    Inicio
+                </a>
 
-                <a href="#team" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Equipo</a>
+                <a href="#work" class="flex items-center hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium">
+                    <div class="mr-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                        </svg>
+                    </div>
+                    Trabajo
+                </a>
 
-                <a href="#work" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Trabajo</a>
+                <a href="#reviews" class="flex items-center hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium">
+                    <div class="mr-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                        </svg>
+                    </div>
+                    Reseñas
+                </a>
 
-                <a href="#pricing" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Precio</a>
-
-                <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+                <a href="#contact" class="flex items-center hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium">
+                    <div class="mr-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                        </svg>
+                    </div>
+                    Contacto
+                </a>
             </div>
         </div>
     </nav>
@@ -91,158 +107,88 @@
             </footer>
         </div>
     </div>
-    <!-- Team Container -->
-    <div class="w3-container w3-padding-64 w3-center" id="team">
-        <h2>NUESTRO EQUIPO</h2>
-        <p>Conoce a nuestro equipo - en nuestras oficinas:</p>
-        <div class="w3-row">
-            <br>
-            <div class="w3-quarter">
-                <img src="images/alvaro.jpeg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-                <h3>Johnny Walker</h3>
-                <p>Web Designer</p>
-            </div>
-            <div class="w3-quarter">
-                <img src="images/alvaro.jpeg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-                <h3>Rebecca Flex</h3>
-                <p>Support</p>
-            </div>
-            <div class="w3-quarter">
-                <img src="images/alvaro.jpeg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-                <h3>Jan Ringo</h3>
-                <p>Boss man</p>
-            </div>
-            <div class="w3-quarter">
-                <img src="images/alvaro.jpeg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-                <h3>Kai Ringo</h3>
-                <p>Fixer</p>
-            </div>
-        </div>
-    </div>
     <!-- Work Row -->
-    <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
-        <div class="w3-quarter">
-            <h2>Our Work</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="w3-quarter">
-            <div class="w3-card w3-white">
-                <img src="images/shipping-containers.webp" alt="Snow" style="width:100%">
-                <div class="w3-container">
-                    <h3>Customer 1</h3>
-                    <h4>Trade</h4>
-                    <p>Blablabla</p>
-                    <p>Blablabla</p>
-                    <p>Blablabla</p>
-                    <p>Blablabla</p>
+    <div class="p-4 bg-secondary-dark p-8" id="work">
+        <div>
+            <h1 class="text-white text-2xl mb-8">Nuestro trabajo</h1>
+            <div class="flex flex-col md:flex-row lg:flex-row md:justify-between lg:justify-between">
+                <div class="bg-white max-w-sm rounded p-6 mb-8">
+                    <div class="flex justify-center items-center">
+                      <img class="object-cover h-64 w-80" src="images/shipping-containers.webp" alt="Alibaba">
+                    </div>
+                    <div class="mt-4">
+                      <p class="text-secondary">
+                        Con más de una década de experiencia en la logística internacional, entendemos las complejidades del comercio global y las convertimos en soluciones sencillas y adaptadas a las necesidades de nuestros clientes.
+                      </p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="w3-quarter">
-            <div class="w3-card w3-white">
-                <img src="images/shipping-containers-2.webp" alt="Lights" style="width:100%">
-                <div class="w3-container">
-                    <h3>Customer 2</h3>
-                    <h4>Trade</h4>
-                    <p>Blablabla</p>
-                    <p>Blablabla</p>
-                    <p>Blablabla</p>
-                    <p>Blablabla</p>
+                <div class="bg-white max-w-sm rounded p-6 mb-8">
+                    <div class="flex justify-center items-center">
+                      <img class="object-cover h-64 w-80" src="images/shipping-containers-2.webp" alt="Alibaba">
+                    </div>
+                    <div class="mt-4">
+                      <p class="text-secondary">
+                        Nuestra misión es clara: facilitar su acceso a productos de calidad y precios competitivos
+                      </p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="w3-quarter">
-            <div class="w3-card w3-white">
-                <img src="images/shipping-containers-3.webp" alt="Mountains" style="width:100%">
-                <div class="w3-container">
-                    <h3>Customer 3</h3>
-                    <h4>Trade</h4>
-                    <p>Blablabla</p>
-                    <p>Blablabla</p>
-                    <p>Blablabla</p>
-                    <p>Blablabla</p>
+                <div class="bg-white max-w-sm rounded p-6 mb-8">
+                    <div class="flex justify-center items-center">
+                      <img class="object-cover h-64 w-80" src="images/shipping-containers-3.webp" alt="Alibaba">
+                    </div>
+                    <div class="mt-4">
+                      <p class="text-secondary">
+                        Nos encargamos de todo: desde la negociación con proveedores hasta la gestión aduanera y la logística de transporte.
+                      </p>
+                    </div>
                 </div>
+    
             </div>
         </div>
     </div>
-    <!-- Container -->
-    <div class="w3-container" style="position:relative">
-        <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal" style="position:absolute;top:-28px;right:24px">+</a>
-    </div>
-    <!-- Pricing Row -->
-    <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
-        <h2>PRICING</h2>
-        <p>Choose a pricing plan that fits your needs.</p>
-        <br>
-        <div class="w3-third w3-margin-bottom">
-            <ul class="w3-ul w3-border w3-hover-shadow">
-                <li class="w3-theme">
-                    <p class="w3-xlarge">Basic</p>
-                </li>
-                <li class="w3-padding-16"><b>10GB</b> Storage</li>
-                <li class="w3-padding-16"><b>10</b> Emails</li>
-                <li class="w3-padding-16"><b>10</b> Domains</li>
-                <li class="w3-padding-16"><b>Endless</b> Support</li>
-                <li class="w3-padding-16">
-                    <h2 class="w3-wide"><i class="fa fa-usd"></i> 10</h2>
-                    <span class="w3-opacity">per month</span>
-                </li>
-                <li class="w3-theme-l5 w3-padding-24">
-                    <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-                </li>
-            </ul>
+    <div class="p-4 lg:flex"> 
+        <div class="flex flex-col items-center text-center mb-8">
+            <img src="images/carlos.webp" alt="Reseña Cliente 1" class="w-48 h-48 rounded-full">
+            <h3 class="text-2xl py-2">Carlos Medina</h3>
+            <p>"Impecable servicio de SinoMex. Proceso de importación simplificado, entregas puntuales y perfectas. 100% recomendados."</p>
         </div>
-        <div class="w3-third w3-margin-bottom">
-            <ul class="w3-ul w3-border w3-hover-shadow">
-                <li class="w3-theme-l2">
-                    <p class="w3-xlarge">Pro</p>
-                </li>
-                <li class="w3-padding-16"><b>25GB</b> Storage</li>
-                <li class="w3-padding-16"><b>25</b> Emails</li>
-                <li class="w3-padding-16"><b>25</b> Domains</li>
-                <li class="w3-padding-16"><b>Endless</b> Support</li>
-                <li class="w3-padding-16">
-                    <h2 class="w3-wide"><i class="fa fa-usd"></i> 25</h2>
-                    <span class="w3-opacity">per month</span>
-                </li>
-                <li class="w3-theme-l5 w3-padding-24">
-                    <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-                </li>
-            </ul>
+        <div class="flex flex-col items-center text-center mb-8">
+            <img src="images/karla.webp" alt="Reseña Cliente 1" class="w-48 h-48 rounded-full">
+            <h3 class="text-2xl py-2">Karla Rangel</h3>
+            <p> "La atención al detalle de SinoMex es sobresaliente. Importaciones eficientes y personal atento. Un socio comercial invaluable."</p>
         </div>
-        <div class="w3-third w3-margin-bottom">
-            <ul class="w3-ul w3-border w3-hover-shadow">
-                <li class="w3-theme">
-                    <p class="w3-xlarge">Premium</p>
-                </li>
-                <li class="w3-padding-16"><b>50GB</b> Storage</li>
-                <li class="w3-padding-16"><b>50</b> Emails</li>
-                <li class="w3-padding-16"><b>50</b> Domains</li>
-                <li class="w3-padding-16"><b>Endless</b> Support</li>
-                <li class="w3-padding-16">
-                    <h2 class="w3-wide"><i class="fa fa-usd"></i> 50</h2>
-                    <span class="w3-opacity">per month</span>
-                </li>
-                <li class="w3-theme-l5 w3-padding-24">
-                    <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-                </li>
-            </ul>
+        <div class="flex flex-col items-center text-center mb-8">
+            <img src="images/sofia.webp" alt="Reseña Cliente 1" class="w-48 h-48 rounded-full">
+            <h3 class="text-2xl py-2">Sofia Vergara</h3>
+            <p>"SinoMex ha superado todas nuestras expectativas. Soluciones rápidas y eficaces, un verdadero aliado en la importación de maquinaria."</p>
         </div>
     </div>
     <!-- Contact Container -->
-    <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-        <div class="w3-row">
-            <div class="w3-col m5">
-                <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-                <h3>Address</h3>
-                <p>Swing by for a cup of coffee, or whatever.</p>
-                <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i> Chicago, US</p>
-                <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i> +00 1515151515</p>
-                <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> test@test.com</p>
+    <div class="" id="contact">
+        <div class="flex flex-col md:flex-row lg:flex-row justify-center p-4">
+            <div class="my-4">
+                <div class="w3-padding-16"><span class="text-2xl">Contacto</span></div>
+                <p class="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                    </svg>
+                    CDMX, México
+                </p>
+                <p class="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                    </svg>                      
+                     +52 5512909026
+                </p>
+                <p class="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                      </svg>                      
+                    avmsinomex@gmail.com
+                </p>
             </div>
-            <div class="w3-col m7">
-                <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+            <div>
+                <form class="w3-container w3-card-4 w3-padding-16 w3-white" method="post" action="https://formspree.io/f/xgegybob">
                     <div class="w3-section">
                         <label>Name</label>
                         <input class="w3-input" type="text" name="Name" required>
@@ -262,32 +208,18 @@
             </div>
         </div>
     </div>
-    <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
     <!-- Footer -->
-    <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-        <h4>Follow Us</h4>
+    <footer class="w3-container w3-padding-32 bg-primary">
+        <h4>Siguenos en nuestras redes sociales</h4>
         <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
         <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-        <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-        <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-        <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
         <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
             <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
             <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
                 <i class="fa fa-chevron-circle-up"></i></span></a>
         </div>
     </footer>
-    <script>
-        // Script for side navigation
-            function w3_open() {
-              var x = document.getElementById("mySidebar");
-              x.style.width = "300px";
-              x.style.paddingTop = "10%";
-              x.style.display = "block";
-            }
-            
+    <script>            
             document.getElementById('mobile-menu-button').addEventListener('click', function() {
               document.getElementById('mobile-menu').classList.toggle('hidden');
             });
