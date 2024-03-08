@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: 'rgb(234 179 8)', // normal shade of primary
+          DEFAULT: 'rgb(251 191 36)', // normal shade of primary
           light: 'rgb(253 224 71)', // lighter shade of primary
           dark: 'rgb(202 138 4)', // darker shade of primary
         },
