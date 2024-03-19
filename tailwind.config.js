@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    'index.html',
+    'index.html'
   ],
   theme: {
     extend: {
       colors: {
         primary: {
-          DEFAULT: 'rgb(251 191 36)', // normal shade of primary
+          DEFAULT: 'rgb(8 51 68)', // normal shade of primary
           light: 'rgb(253 224 71)', // lighter shade of primary
           dark: 'rgb(202 138 4)', // darker shade of primary
         },
@@ -19,7 +19,7 @@ module.exports = {
       },
       textColor: {
         primary: {
-          DEFAULT: 'rgb(254 240 138)', // normal shade of primary
+          DEFAULT: 'rgb(8 51 68)', // normal shade of primary
           light: 'rgb(254 252 232)', // lighter shade of primary
           dark: 'rgb(250 204 21)', // darker shade of primary
         },
@@ -36,6 +36,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 

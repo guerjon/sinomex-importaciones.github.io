@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link href="./output.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
     <!-- npx tailwindcss -i style.css -o output.css --watch -->
@@ -22,7 +23,7 @@
                 <div class="absolute inset-y-0 left-0 flex items-center sm:hidden flex flex-grow justify-between w-full">
                     <button
                       type="button"
-                      class="inline-flex items-center justify-center p-2 rounded-md text-secondary hover:text-white hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                      class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                       id="mobile-menu-button"
                     >
                         <span class="sr-only">Open main menu</span>
@@ -47,11 +48,9 @@
                                 <a href="#" class="p-2 rounded-md" aria-current="page">Inicio</a>
                             </div>
                             <div class="flex items-center hover:bg-white hover:text-black rounded p-1">
-                               
                                 <a href="#work" class="p-2 rounded-md" aria-current="page">Trabajo</a>
                             </div>
                             <div class="flex items-center hover:bg-white hover:text-black rounded p-1">
-                               
                                 <a href="#reviews" class="p-2 rounded-md" aria-current="page">Reseñas</a>
                             </div>
                             <div class="flex items-center hover:bg-white hover:text-black rounded p-1">
@@ -128,23 +127,27 @@
                 <p>Modal footer</p>
             </footer>
         </div>
-    </div>
+    </div>  
     <!-- Work Row -->
-    <div class="p-4 bg-secondary-dark p-8" id="work">
+    <div class="p-4 bg-secondary-dark md:p-8 lg:p-8" id="work">
         <div>
-            <h1 class="text-white text-2xl mb-8">Nuestro trabajo</h1>
+            <div class="w-full text-center text-2xl lg:text-4xl md:text-4xl p-6 pb-8 lg:p-8 text-white">
+                <h1>
+                    Nuestro trabajo
+                </h1>
+            </div>    
             <div class="flex flex-col md:flex-row lg:flex-row md:justify-between lg:justify-between">
-                <div class="bg-white max-w-sm rounded mb-8">
+                <div class="bg-white max-w-sm rounded md:m-4 lg:m-8 mb-8">
                     <div class="flex rounded">
                       <img class="object-cover rounded" src="images/1.webp" alt="Alibaba">
                     </div>
                     <div class="mt-4 p-6">
                       <p class="text-secondary">
-                        Con más de una década de experiencia en la logística internacional, entendemos las complejidades del comercio global y las convertimos en soluciones sencillas y adaptadas a las necesidades de nuestros clientes.
+                        Con más de una década de experiencia en la logística internacional, entendemos las complejidades del comercio global.
                       </p>
                     </div>
                 </div>
-                <div class="bg-white max-w-sm rounded mb-8">
+                <div class="bg-white max-w-sm rounded md:m-4 lg:m-8 mb-8">
                     <div class="flex rounded">
                       <img class="object-cover rounded" src="images/dollar.webp" alt="Alibaba">
                     </div>
@@ -154,7 +157,7 @@
                       </p>
                     </div>
                 </div>
-                <div class="bg-white max-w-sm rounded mb-8">
+                <div class="bg-white max-w-sm rounded md:m-4 lg:m-8 mb-8">
                     <div class="flex rounded">
                       <img class="object-cover rounded" src="images/handshake.webp" alt="Alibaba">
                     </div>
@@ -168,57 +171,105 @@
             </div>
         </div>
     </div>
-    <div class="p-4 lg:flex m-8 justify-between" id="reviews"> 
-        <div class="flex flex-col items-center text-center mb-8 bg-white w-96 p-10 rounded drop-shadow-lg">
-            <img src="images/face.webp" alt="Reseña Cliente 1" class="w-24 h-24 rounded-full">
-            <svg class="mt-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
-            </svg>
-            <div class="flex h-32 mt-4">
-                <p>"Los recomiendo, volveria a contratar sus servicios, muy profesionales."</p>
-            </div>
-            <h3 class="text-2xl py-2">Carlos Medina</h3>
+    <div class="p-4 bg-secondary-dark " id="pictures">
+        <div class="w-full text-center text-2xl lg:text-4xl md:text-4xl lg:p-8 text-white">
+            <h1>
+                Galería
+            </h1>
         </div>
-        <div class="flex flex-col items-center text-center mb-8 bg-white w-96 p-10 rounded drop-shadow-lg">
-            <img src="images/face-woman.webp" alt="Reseña Cliente 1" class="w-24 h-24 rounded-full ">
-
-            <svg class="mt-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
-            </svg>
-
-            <div class="flex h-32 mt-4">
-                <p class="">"Normalmente es dificil trabajar con cantidades grandes de importación sobretodo en aduana pero SinoMex lo hizo parecer fácil."</p>
+        <div id="default-carousel" class="relative py-10" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="overflow-hidden relative h-56 rounded-lg  sm:h-64 xl:h-80 2xl:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/fotos/10.jpeg" class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-fit: contain; width: 100%; height: 100%;" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/fotos/11.jpeg" class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-fit: contain; width: 100%; height: 100%;" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/fotos/3.jpeg" class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-fit: contain; width: 100%; height: 100%;" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/fotos/4.jpeg" class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-fit: contain; width: 100%; height: 100%;" alt="...">
+                </div>            
             </div>
-            <h3 class="text-2xl py-2">Karla Rangel</h3>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/80 dark:bg-gray-800/80 group-hover:bg-white dark:group-hover:bg-gray-800 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-5 h-5 sm:w-6 sm:h-6 text-gray-800 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    <span class="hidden">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/80 dark:bg-gray-800/80 group-hover:bg-white dark:group-hover:bg-gray-800 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-5 h-5 sm:w-6 sm:h-6 text-gray-800 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <span class="hidden">Next</span>
+                </span>
+            </button>
         </div>
-        <div class="flex flex-col items-center text-center mb-8 bg-white w-96 p-10 rounded drop-shadow-lg">
-            <img src="images/face-woman.webp" alt="Reseña Cliente 1" class="w-24 h-24 rounded-full">
-            <svg class="mt-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
-            </svg>
-
-            <div class="flex h-32 mt-4">
-                <p class="">"Mi producto llego bien y el precio es bastante competitivo."</p>
+    </div>
+    <div  id="reviews"> 
+        <div class="w-full text-center text-2xl lg:text-4xl md:text-4xl p-4 md:p-6 lg:p-8">
+            <h1>
+                Conoce lo que nuestros clientes opinan de nosotros
+            </h1>
+        </div>
+        <div  class="p-4 lg:flex m-4 md:m-6 lg:m-8 justify-between">
+            <div class="w-full flex flex-col items-center text-center mb-8 bg-white w-72 p-4 md:p-6 lg:m-2 rounded drop-shadow-lg">
+                <img src="images/face.webp" alt="Reseña Cliente 1" class="w-24 h-24 rounded-full">
+                <svg class="mt-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
+                </svg>
+                <div class="flex h-32 mt-4">
+                    <p>"Los recomiendo, volveria a contratar sus servicios, muy profesionales."</p>
+                </div>
+                <h3 class="text-2xl py-2">Carlos Medina</h3>
             </div>
-            <h3 class="text-2xl py-2">Paola Hernández</h3>
-        </div>
-        <div class="flex flex-col items-center text-center mb-8 bg-white w-96 p-10 rounded drop-shadow-lg">
-            <img src="images/face.webp" alt="Reseña Cliente 1" class="w-24 h-24 rounded-full">
-            <svg class="mt-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
-            </svg>
-
-            <div class="flex h-32 mt-4">
-                <p class="">"Todo bien, entregaron en tiempo y forma."</p>    
+            <div class="w-full flex flex-col items-center text-center mb-8 bg-white w-72 p-4 md:p-6 lg:m-2 rounded drop-shadow-lg">
+                <img src="images/face-woman.webp" alt="Reseña Cliente 1" class="w-24 h-24 rounded-full ">
+    
+                <svg class="mt-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
+                </svg>
+                <div class="flex h-32 mt-4">
+                    <p class="">"Es dificil trabajar con cantidades grandes de importación en aduana pero SinoMex lo hizo parecer fácil."</p>
+                </div>
+                <h3 class="text-2xl py-2">Karla Rangel</h3>
             </div>
-            <h3 class="text-2xl py-2">Juan Hernández</h3>
+            <div class="w-full flex flex-col items-center text-center mb-8 bg-white w-72 p-4 md:p-6 lg:m-2 rounded drop-shadow-lg">
+                <img src="images/face-woman.webp" alt="Reseña Cliente 1" class="w-24 h-24 rounded-full">
+                <svg class="mt-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
+                </svg>
+    
+                <div class="flex h-32 mt-4">
+                    <p class="">"Mi producto llego bien y el precio es bastante competitivo."</p>
+                </div>
+                <h3 class="text-2xl py-2">Paola Hernández</h3>
+            </div>
+            <div class="w-full flex flex-col items-center text-center mb-8 bg-white w-72 p-4 md:p-6 lg:m-2 rounded drop-shadow-lg">
+                <img src="images/face.webp" alt="Reseña Cliente 1" class="w-24 h-24 rounded-full">
+                <svg class="mt-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
+                </svg>
+    
+                <div class="flex h-32 mt-4">
+                    <p class="">"Todo bien, entregaron en tiempo y forma."</p>    
+                </div>
+                <h3 class="text-2xl py-2">Juan Hernández</h3>
+            </div>
         </div>
+
     </div>
     <!-- Contact Container -->
     <div class="" id="contact">
         <div class="flex flex-col md:flex-row lg:flex-row items-center p-4">
             <div class="flex flex-grow flex-col justify-center items-center pb-4">
-                <div class="pb-4 text-yellow-500"><span class="text-4xl">Contacto</span></div>
+                <div class="pb-4 text-primary"><span class="text-4xl">Contacto</span></div>
                 <p class="flex justify-center items-center mb-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
@@ -240,7 +291,7 @@
             </div>
             <div class="mb-8 flex-grow">
                 <form class="pt-4 pb-12 px-6 bg-white rounded" method="post" action="https://formspree.io/f/xgegybob">
-                    <h1 class="text-4xl">¿Cómo podemos ayudarte?</h1>
+                    <h1 class="text-primary text-4xl">¿Cómo podemos ayudarte?</h1>
                     <div class="w3-section">
                         <label>Nombre</label>
                         <input class="w3-input" type="text" name="Name" required>
@@ -287,6 +338,7 @@
               document.getElementById('mobile-menu').classList.toggle('hidden');
             });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 
 </html>
