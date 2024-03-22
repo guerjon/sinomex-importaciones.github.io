@@ -113,23 +113,7 @@
             Navegamos la complejidad del comercio global.
         </div>
     </div>
-    <!-- Modal -->
-    <div id="id01" class="w3-modal">
-        <div class="w3-modal-content w3-card-4 w3-animate-top">
-            <header class="w3-container w3-teal w3-display-container">
-                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-                <h4>Oh snap! We just showed you a modal..</h4>
-                <h5>Because we can <i class="fa fa-smile-o"></i></h5>
-            </header>
-            <div class="w3-container">
-                <p>Cool huh? Ok, enough teasing around..</p>
-                <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
-            </div>
-            <footer class="w3-container w3-teal">
-                <p>Modal footer</p>
-            </footer>
-        </div>
-    </div>  
+ 
     <!-- Work Row -->
     <div class="p-4 bg-secondary-dark md:p-8 lg:p-8" id="work">
         <div>
@@ -184,11 +168,11 @@
             <div class="overflow-hidden relative h-56 rounded-lg  sm:h-64 xl:h-80 2xl:h-96">
                 <!-- Item 1 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="images/fotos/10.jpeg" class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-fit: contain; width: 100%; height: 100%;" alt="...">
+                    <img src="images/fotos/1.jpeg" class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-fit: contain; width: 100%; height: 100%;" alt="...">
                 </div>
                 <!-- Item 2 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="images/fotos/11.jpeg" class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-fit: contain; width: 100%; height: 100%;" alt="...">
+                    <img src="images/fotos/2.jpeg" class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-fit: contain; width: 100%; height: 100%;" alt="...">
                 </div>
                 <!-- Item 3 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
@@ -197,7 +181,34 @@
                 <!-- Item 4 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <img src="images/fotos/4.jpeg" class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-fit: contain; width: 100%; height: 100%;" alt="...">
-                </div>            
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/fotos/5.jpeg" class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-fit: contain; width: 100%; height: 100%;" alt="...">
+                </div>
+                <!-- Item 6 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/fotos/6.jpeg" class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-fit: contain; width: 100%; height: 100%;" alt="...">
+                </div>
+                <!-- Item 7 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/fotos/7.jpeg" class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-fit: contain; width: 100%; height: 100%;" alt="...">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/fotos/8.jpeg" class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-fit: contain; width: 100%; height: 100%;" alt="...">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/fotos/9.jpeg" class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-fit: contain; width: 100%; height: 100%;" alt="...">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/fotos/10.jpeg" class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-fit: contain; width: 100%; height: 100%;" alt="...">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/fotos/11.jpeg" class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-fit: contain; width: 100%; height: 100%;" alt="...">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/fotos/12.jpeg" class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-fit: contain; width: 100%; height: 100%;" alt="...">
+                </div>
             </div>
             <!-- Slider controls -->
             <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
@@ -213,6 +224,25 @@
                 </span>
             </button>
         </div>
+        <!-- Flowbite Modal -->
+        <div id="imageModal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
+            <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                    <!-- Modal header -->
+                    <div class="flex justify-between items-start p-4 rounded-t border-b dark:border-gray-600">
+                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" onclick="closeModal()">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-6 space-y-6">
+                        <img id="modalImage" src="" class="w-auto h-auto max-w-full max-h-full" alt="Imagen ampliada">
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <div  id="reviews"> 
         <div class="w-full text-center text-2xl lg:text-4xl md:text-4xl p-4 md:p-6 lg:p-8">
@@ -336,10 +366,26 @@
         
     </footer>
     <script>            
-            document.getElementById('mobile-menu-button').addEventListener('click', function() {
-              document.getElementById('mobile-menu').classList.toggle('hidden');
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+        var carouselImages = document.querySelectorAll('[data-carousel-item] img');
+
+        carouselImages.forEach(function(img) {
+            img.addEventListener('click', function() {
+            var src = img.getAttribute('src');
+            document.getElementById('modalImage').setAttribute('src', src);
+            document.getElementById('imageModal').classList.remove('hidden');
             });
+        });
+        });
+
+        function closeModal() {
+            document.getElementById('imageModal').classList.add('hidden');
+        }         
     </script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 
